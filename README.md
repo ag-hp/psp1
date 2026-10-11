@@ -56,3 +56,9 @@ La clase <code style="color: #ff79c6; background-color: #282a36; padding: 2px 5p
 * Java 21, sin crear <code style="color: #ff79c6; background-color: #282a36; padding: 2px 5px; border-radius: 3px;">Thread</code> directamente.
 * Solo puedes usar los mecanismos de sincronización vistos en la unidad. No se permiten clases del paquete <code style="color: #ff79c6; background-color: #282a36; padding: 2px 5px; border-radius: 3px;">java.util.concurrent.atomic</code>, implementaciones de <code style="color: #ff79c6; background-color: #282a36; padding: 2px 5px; border-radius: 3px;">Lock</code>, colecciones concurrentes ni <code style="color: #ff79c6; background-color: #282a36; padding: 2px 5px; border-radius: 3px;">wait()/notify()</code>.
 * La Parte 1 y la Parte 2 deben resolverse con **mecanismos de sincronización distintos**.
+
+---
+
+<p align="center">
+  <a href="https://github.com/ag-hp/dam.git"><img src="https://img.shields.io/badge/VER_REPOSITORIO_COMPLETO-DESARROLLO_DE_APLICACIONES_MULTIPLATAFORMA-238636?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" alt="Ver Repositorio Completo Desarrollo de Aplicaciones Multiplataforma"></a>
+</p>
