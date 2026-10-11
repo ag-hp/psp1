@@ -42,16 +42,16 @@ public class Main {
 
         // La suma de kWh de los vehículos generados coincide con totalKwh.
         if (sumKwh == snapshot.totalKwh()) {
-            System.out.println("Comprobación 1: correctos los kWh)");
+            System.out.println("Comprobación nº1: correctos los kWh)");
         } else {
-            System.out.println("Comprobación 1: incorrectos los kWh");
+            System.out.println("Comprobación nº1: incorrectos los kWh");
         }
 
         // totalCents == totalKwh * 45.
         if (snapshot.totalCents() == snapshot.totalKwh() * 45L) {
-            System.out.println("Comprobación 2: correcto, céntimos con kWh");
+            System.out.println("Comprobación nº2: correcto, céntimos con kWh");
         } else {
-            System.out.println("Comprobación 2: incorrecto, céntimos con kWh");
+            System.out.println("Comprobación nº2: incorrecto, céntimos con kWh");
         }
     }
 }
