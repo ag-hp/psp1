@@ -24,13 +24,13 @@ public class ChargingStation {
             chargers.acquire();
             try {
                 // Muestra por consola que el vehículo empieza a cargar.
-                System.out.println(vehicle.plate() + " empieza a cargar la batería");
+                System.out.println(vehicle.plate() + " vehículo empieza a cargar.");
                 // Simula la carga con Thread.sleep(vehicle.kwh() * 20L).
                 Thread.sleep(vehicle.kwh() * 20L);
                 // Anota la carga en el registro de la jornada.
                 stats.register(vehicle.kwh());
                 // Muestra por consola que el vehículo termina y libera el cargador.
-                System.out.println(vehicle.plate() + " termina y desconecta el cargador");
+                System.out.println(vehicle.plate() + " vehículo termina y libera el cargador.");
             } finally {
                 chargers.release();
             }

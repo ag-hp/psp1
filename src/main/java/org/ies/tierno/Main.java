@@ -48,7 +48,7 @@ public class Main {
         }
 
         // totalCents == totalKwh * 45.
-        if (snapshot.totalCents() == snapshot.totalKwh() * 45) {
+        if (snapshot.totalCents() == snapshot.totalKwh() * 45L) {
             System.out.println("Comprobación 2: correcto, céntimos con kWh");
         } else {
             System.out.println("Comprobación 2: incorrecto, céntimos con kWh");

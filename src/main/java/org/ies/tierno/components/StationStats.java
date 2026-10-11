@@ -6,7 +6,7 @@ import org.ies.tierno.model.StatsSnapshot;
 public class StationStats {
     // Implementa la clase StationStats, que guarda dos datos:
     // totalKwh -> energía total suministrada
-    private long totalKwh = 0;
+    private int totalKwh = 0;
     // totalCents -> ingresos totales, en céntimos
     private long totalCents = 0;
 

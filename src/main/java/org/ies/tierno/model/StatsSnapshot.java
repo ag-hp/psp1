@@ -1,4 +1,4 @@
 package org.ies.tierno.model;
 
-public record StatsSnapshot(long totalKwh, long totalCents) {
+public record StatsSnapshot(int totalKwh, long totalCents) {
 }
