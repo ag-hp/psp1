@@ -27,7 +27,6 @@ public class Main {
                 int kwh = 5 + random.nextInt(46);
                 sumKwh += kwh;
 
-
                 Vehicle vehicle = new Vehicle(plate, kwh);
                 ChargeTask task = new ChargeTask(station, vehicle);
 
