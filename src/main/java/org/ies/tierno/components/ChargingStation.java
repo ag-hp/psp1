@@ -7,7 +7,7 @@ import java.util.concurrent.Semaphore;
 
 // Parte 1: acceso a los cargadores
 // Implementa la clase ChargingStation, que gestiona el uso de los cargadores con estas reglas:
-    public class ChargingStation {
+public class ChargingStation {
 
     // Nunca puede haber más de 4 vehículos cargando a la vez.
     private final Semaphore chargers = new Semaphore(4);
@@ -36,9 +36,9 @@ import java.util.concurrent.Semaphore;
                 chargers.release();
             }
         } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
             throw new RuntimeException(e);
         }
-
         return new ChargeResult(vehicle.plate(), vehicle.kwh(), vehicle.kwh() * 45L);
     }
 }

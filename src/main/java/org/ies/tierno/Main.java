@@ -7,7 +7,6 @@ import org.ies.tierno.model.StatsSnapshot;
 import org.ies.tierno.model.Vehicle;
 
 import java.util.Random;
-import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 // Parte 3: programa principal
