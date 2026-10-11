@@ -17,15 +17,16 @@ public class Main {
         ChargingStation station = new ChargingStation(stats);
         Random random = new Random();
 
-        int sumaKwh = 0;
+        int sumKwh = 0;
 
         // Crear un ExecutorService con Executors.newFixedThreadPool(8) dentro de un try-with-resources.
         try (var es = Executors.newFixedThreadPool(8)) {
             for (int i = 0; i < 20; i++) {
                 // Generar los 20 vehículos con matrículas y kWh aleatorios.
-                String plate = "MAT-" + random.nextInt(1000);
+                String plate = "Matrícula: " + random.nextInt(10000);
                 int kwh = 5 + random.nextInt(46);
-                sumaKwh = sumaKwh + kwh;
+                sumKwh += kwh;
+
 
                 Vehicle vehicle = new Vehicle(plate, kwh);
                 ChargeTask task = new ChargeTask(station, vehicle);
@@ -37,20 +38,20 @@ public class Main {
 
         // Cuando el pool haya terminado, mostrar el snapshot() final y hacer dos comprobaciones de coherencia:
         StatsSnapshot snapshot = stats.snapshot();
-        System.out.println("Snapshot final: " + snapshot);
+        System.out.println("Resultado final: " + snapshot);
 
         // La suma de kWh de los vehículos generados coincide con totalKwh.
-        if (sumaKwh == snapshot.totalKwh()) {
-            System.out.println("Comprobación 1 correcta");
+        if (sumKwh == snapshot.totalKwh()) {
+            System.out.println("Comprobación 1: correctos los kWh)");
         } else {
-            System.out.println("Comprobación 1 INCORRECTA");
+            System.out.println("Comprobación 1: incorrectos los kWh");
         }
 
         // totalCents == totalKwh * 45.
         if (snapshot.totalCents() == snapshot.totalKwh() * 45) {
-            System.out.println("Comprobación 2 correcta");
+            System.out.println("Comprobación 2: correcto, céntimos con kWh");
         } else {
-            System.out.println("Comprobación 2 INCORRECTA");
+            System.out.println("Comprobación 2: incorrecto, céntimos con kWh");
         }
     }
 }
