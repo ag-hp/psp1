@@ -13,8 +13,8 @@ public class StationStats {
     // Métodos obligatorios: void register(int kwh): suma la energía de una carga y su importe.
     // Los valores del registro tienen que ser siempre correctos, sea cual sea el número de vehículos y el orden en que se ejecuten los hilos.
     public synchronized void register(int kwh) {
-        totalKwh += kwh; // añadir + 1 para el fallo
-        totalCents += kwh * 45L; // añadir + 1 para el fallo
+        totalKwh += kwh; // ponemos + 1 para dar incorrecta la comprobación 1 y 2
+        totalCents += kwh * 45L; // ponemos + 1 para dar incorrecta solo la comprobación 2
     }
     // Métodos obligatorios: StatsSnapshot snapshot(): devuelve un record con los dos valores.
     //  Además, snapshot() nunca puede devolver una pareja de valores incoherente entre sí.
