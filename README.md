@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/PSP_%C2%B7_2%C2%BA_DAM-Programaci%C3%B3n_de_Servicios_y_Procesos-ED8B00?style=flat" alt="PSP 2º DAM">
+    <img src="https://img.shields.io/badge/DAM_2-Programación_de_Servicios_y_Procesos-ED8B00?style=flat" alt="PSP 2º DAM">
     <img src="https://img.shields.io/badge/Semaphore-ED8B00?style=flat" alt="Semaphore">
     <img src="https://img.shields.io/badge/synchronized-ED8B00?style=flat" alt="synchronized">
     <img src="https://img.shields.io/badge/ExecutorService-ED8B00?style=flat" alt="ExecutorService">
